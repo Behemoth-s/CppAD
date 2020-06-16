@@ -19,7 +19,7 @@
 SET(colpack_libdir     NOTFOUND)
 IF( cppad_has_colpack )
     FOREACH(dir ${cmake_install_libdirs})
-        FILE(GLOB file_list "${colpack_prefix}/${dir}/libColPack.*" )
+        FILE(GLOB file_list "${colpack_prefix}/${dir}/ColPack*" )
         IF( file_list )
             SET(colpack_libdir "${colpack_prefix}/${dir}")
         ENDIF( file_list )
