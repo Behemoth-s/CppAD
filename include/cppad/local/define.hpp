@@ -65,7 +65,7 @@ https://gitlab.kitware.com/cmake/community/wikis/doc/tutorials/BuildingWinDLL
 # ifdef  cppad_lib_EXPORTS
 # define CPPAD_LIB_EXPORT __declspec(dllexport)
 # else
-# define CPPAD_LIB_EXPORT __declspec(dllimport)
+# define CPPAD_LIB_EXPORT __declspec(dllexport)
 # endif  // cppad_lib_EXPORTS
 # else   // _MSC_VER
 # define CPPAD_LIB_EXPORT

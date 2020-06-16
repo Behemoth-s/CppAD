@@ -42,7 +42,7 @@ Upon return it is a $cref cpp_ad_graph$$ representation of this function.
 $head Prototype$$
 $srccode%hpp% */
 namespace CppAD { namespace local { namespace graph {
-    void json_parser(
+    __declspec(dllexport) void json_parser(
         const std::string&  json      ,
         cpp_graph&          graph_obj
     );
